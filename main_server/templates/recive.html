@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+    <div class="w3-container w3-teal w3-padding-12">
+        <h1 style="text-align: center;">Federated Server for Model Aggregation</h1>
+    </div>
+    <ul class="w3-ul w3-border ">
+        <li><h2 class="w3-light-grey" style="text-align: center;">Following Object Detections Models of <strong>Federated Clients 1,2 and 3</strong> Received At <br> <strong> Federated Server</strong> For Model Aggregation</h2></li>
+        <li style="font-size:large;">Face Detection</li>
+        <li style="font-size:large;">Animal Detection</li>
+        <li style="font-size:large;">Unsafe Content Detections</li>
+        <li style="font-size:large;">Noteworthy Vehicle Detection</li>
+    </ul>
+	
+	<div class="w3-container w3-light-grey w3-padding-12">
+        <h2 style="text-align: center;" id="agg"></h2>
+    </div>
+	
+
+    <div class="w3-container w3-margin-top">
+	<button onclick="agg_model()" class="w3-button w3-black w3-hover-dark-grey w3-round-xxlarge" style="width:33%"><a href="http://localhost:8000/aggregate_models">Aggregate Local Models</a></button>
+        <button onclick="modelsent()" class="w3-button w3-black w3-hover-dark-grey w3-round-xxlarge" style="width:33%" ><a href="http://localhost:8000/send_model_clients">Send Aggregated Models to Federated Clients</a></button>
+        
+		<h2 class= "w3-light-grey" style="text-align: center;" id="sent"></h2>
+		<script>
+		function modelsent() {
+			document.getElementById("sent").innerHTML = "Aggregated Model sent to <strong>Federated Clients 1,2 & 3</strong> and Stored at <br> Federated Clients Local Storage";
+		}
+		function agg_model() {
+			document.getElementById("agg").innerHTML = "Model Aggregation completed and Aggregated Model stored at Global Storage.";
+		}
+		</script>
+	</div>
+
+</body>
+</html> 

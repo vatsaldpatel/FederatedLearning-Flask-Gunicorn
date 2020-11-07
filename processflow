@@ -1,0 +1,11 @@
+Initial 
+1. device1, device2 - model training
+2. device1, device2 - send model
+3. main_server - model aggregation
+4. main_server - send aggregated model
+
+Repeat...
+1. device1, device2 - model training
+2. device1, device2 - send model
+3. main_server - model aggregation
+4. main_server - send aggregated model
